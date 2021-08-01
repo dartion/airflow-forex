@@ -33,7 +33,7 @@ Components
 **Airflow**:
 The datapipe line to interact with all below components
 
-**Hadoop**
+**Hadoop Distributed File System (HDFS)** 
 Namenode: 
 Datanode:
 
