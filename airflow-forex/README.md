@@ -30,29 +30,23 @@ A high level architecture of FOREX pipeline on docker
 
 Components
 
-####Airflow:
-
+**Airflow**:
 The datapipe line to interact with all below components
 
-####Hadoop
-
+**Hadoop**
 Namenode: 
 Datanode:
 
-####Spark
-
+**Spark**
 Process FOREX currencies at scale.
 
-####Hive
-
+**Hive**
 Interact with files in HDFS using SQL syntax using (HQL)
 
-####Adminer
-
+**Adminer**
 Tool to interact with Posgres database.
 
-####Hue
-
+**Hue**
 Dashboard to view data from hive and HDFS
 
 ## The pipeline
