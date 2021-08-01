@@ -31,23 +31,31 @@ A high level architecture of FOREX pipeline on docker
 Components
 
 **Airflow**:
-The datapipe line to interact with all below components
+
+The Airflow datapipe line to interact with all below components
 
 **Hadoop Distributed File System (HDFS)** 
+
+To store currencies file
 Namenode: 
 Datanode:
 
 **Spark**
-Process FOREX currencies at scale.
+
+To process FOREX currencies at scale.
 
 **Hive**
-Interact with files in HDFS using SQL syntax using (HQL)
+
+To interact with files in HDFS using SQL syntax using (HQL)
 
 **Adminer**
+
 Tool to interact with Posgres database.
 
 **Hue**
+
 Dashboard to view data from hive and HDFS
+
 
 ## The pipeline
 
@@ -119,13 +127,14 @@ Password: secret token generated from api.slack.com -> Apps -> Incoming Webhooks
 ## Individual DAG tests
 Note: Before running in individual DAG tests on `airflow-forex_airflow` remember to create all connections!
 1) is_forex_rates_available
+
  `airflow tasks test forex_data_pipeline is_forex_rates_available 2021-07-01`
 
-2)is_forex_currencies_file_available
+2) is_forex_currencies_file_available
 
  `airflow tasks test forex_data_pipeline is_forex_currencies_file_available 2021-07-01`
 
-3)downloading_rates
+3) downloading_rates
 
  `airflow tasks test forex_data_pipeline downloading_rates 2021-07-01`
 
