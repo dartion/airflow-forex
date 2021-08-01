@@ -27,20 +27,34 @@ To run this project on your local environment, it is recommended(was developed w
 ## Architecture 
 A high level architecture of FOREX pipeline on docker
 ![Alt text](screenshots/forex_architecture.png?raw=true "Forex Architecture")
+
 Components
+
 ####Airflow:
+
 The datapipe line to interact with all below components
+
 ####Hadoop
+
 Namenode: 
 Datanode:
+
 ####Spark
+
 Process FOREX currencies at scale.
+
 ####Hive
+
 Interact with files in HDFS using SQL syntax using (HQL)
+
 ####Adminer
+
 Tool to interact with Posgres database.
+
 ####Hue
+
 Dashboard to view data from hive and HDFS
+
 ## The pipeline
 
 1) The pipeline includes tasks for checking if rates are available on github gist via URL.
