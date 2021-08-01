@@ -1,0 +1,4 @@
+https://gist.github.com/dartion/4c96ec6349aa747f2b8fce09ff9c4d83
+https://security.google.com/settings/security/apppasswords
+https://slack.com/
+https://api.slack.com/
